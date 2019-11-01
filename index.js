@@ -23,6 +23,7 @@ rp(options)
     const data = $.html();
     result.themeName = scrapper.getThemeName(data);
     result.appsUrl = scrapper.getShopifyApps(data);
+    result.metaDatas = scrapper.getMetaData($);
     console.log(result);
   })
   .catch(error => {
